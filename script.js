@@ -140,7 +140,7 @@ if(orders){
         let annuler= document.createElement("button");
         let p = document.createElement("p");
 
-        p.textContent = `${article.nom} - ${article.prix} Ar`;
+        p.textContent = `${article.nom} - ${article.prix.toLocaleStrind("fr-FR")} Ar`;
         annuler.textContent= "Annuler";
         sousBox3.classList.add("cart-listS");
 
@@ -161,4 +161,5 @@ let versPanier= document.querySelector("#cart");
 versPanier.addEventListener("click",() => {
   window.location.href= "panier.html";
 });
+
 
