@@ -159,5 +159,6 @@ if(orders){
 
 let versPanier= document.querySelector("#cart");
 versPanier.addEventListener("click",() => {
-  window.location.href= "Cart.html";
+  window.location.href= "panier.html";
 });
+
